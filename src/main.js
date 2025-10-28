@@ -134,7 +134,7 @@ async function displayCardsDynamically() {
         ".read-more"
       ).href = `eachHike.html?docID=${doc.id}`;
 
-      newcard.querySelector(".card-image").src = `./images/$(hike.code).png`;
+      newcard.querySelector(".card-image").src = `./images/${hike.code}.png`;
       newcard.querySelector(
         ".read-more"
       ).href = `eachHike.html?docID=${doc.id}`;
