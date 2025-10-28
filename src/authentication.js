@@ -1,3 +1,6 @@
+import { db } from "/src/firebaseConfig.js";
+import { doc, setDoc } from "firebase/firestore";
+
 // src/authentication.js
 // ------------------------------------------------------------
 // Part of the COMP1800 Projects 1 Course (BCIT).
