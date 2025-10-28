@@ -130,14 +130,11 @@ async function displayCardsDynamically() {
       newcard.querySelector(".card-text").textContent =
         hike.details || `Located in ${hike.city}.`;
       newcard.querySelector(".card-length").textContent = hike.length;
-      newcard.querySelector(
-        ".read-more"
-      ).href = `eachHike.html?docID=${doc.id}`;
-
       newcard.querySelector(".card-image").src = `./images/${hike.code}.png`;
       newcard.querySelector(
         ".read-more"
       ).href = `eachHike.html?docID=${doc.id}`;
+
       // Attach the new card to the container
       document.getElementById("hikes-go-here").appendChild(newcard);
     });
